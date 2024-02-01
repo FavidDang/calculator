@@ -1,0 +1,43 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    align-items: stretch;
+}
+
+#result {
+    display: flex;
+    height: 20%;
+    border-width: 40px;
+    border-style: solid;
+    border-color: black;
+    padding-right: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+#left, #right, #buttons, .row, .column, .button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#buttons {
+    height: 80%;
+}
+
+#left {
+    flex-direction: column;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.button {
+    text-align: center;
+    align-items: center;
+}

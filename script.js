@@ -7,3 +7,4 @@ function operate(n1, n2, op) { return op(n1, n2)}
 let n1;
 let n2;
 let op;
+let display;
