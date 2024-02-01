@@ -1,8 +1,14 @@
 function add(n1, n2) { return n1 + n2; }
 function subtract(n1, n2) { return n1 - n2; }
 function multiply(n1, n2) { return n1 * n2; }
-function divide(n1, n2) { return n1 / n2; }
-function operate(n1, n2, op) { return op(Number(n1), Number(n2))}
+function divide(n1, n2) { 
+    if (n2 === 0) {
+        alert("Error: Division by 0!");
+        return 0;
+    }
+    return n1 / n2;
+}
+function operate(n1, n2, op) { return Math.round(op(Number(n1), Number(n2)) * 10000) / 10000}
 
 function updateDisplay() {
     display = `${n1} ${displayOp} ${n2}`;
